@@ -1,0 +1,51 @@
+id,name,age,city,province,active,class,last_exam_score,attendance_count,batch
+1,Abdul,54,Samarinda,Kalimantan Timur,0,morning,59,6,1
+2,Kurniawan,22,Bandung,Jawa Barat,1,afternoon,85,7,1
+3,Ilham,29,Tasikmalaya,Jawa Barat,1,morning,52,6,1
+4,Budi,57,Tanjungpinang,Kepulauan Riau,1,afternoon,70,6,1
+5,Adi,35,Semarang,Jawa Tengah,0,afternoon,61,3,1
+6,Eko,28,Sukabumi,Jawa Barat,1,morning,78,4,1
+7,Nurul,17,Kota Administrasi Jakarta Selatan,Jakarta,0,morning,79,5,1
+8,Putra,51,Palangkaraya,Kalimantan Tengah,1,morning,71,6,1
+9,Nina,57,Tanjungpinang,Kepulauan Riau,1,morning,80,6,1
+10,Arif,56,Batam,Kepulauan Riau,0,afternoon,65,4,1
+11,Ari,42,Malang,Jawa Timur,1,afternoon,82,5,1
+12,Indra,33,Purwokerto,Jawa Tengah,1,afternoon,60,7,1
+13,Dyah,24,Bogor,Jawa Barat,0,morning,66,6,1
+14,Rizki,57,Tanjungpinang,Kepulauan Riau,0,afternoon,67,7,1
+15,Maria,47,Pontianak,Kalimantan Barat,1,morning,71,5,1
+16,Ratih,19,Kota Administrasi Jakarta Utara,Jakarta,0,morning,81,6,1
+17,Pratiwi,26,Cirebon,Jawa Barat,1,afternoon,76,5,1
+18,Kartika,,Depok,,0,morning,,4,1
+19,Wulandari,52,Balikpapan,Kalimantan Timur,1,afternoon,83,6,1
+20,Fajar,34,Salatiga,Jawa Tengah,0,afternoon,85,5,1
+21,Bayu,39,Blitar,Jawa Timur,0,afternoon,89,6,1
+22,Lestari,30,Banjar,Jawa Barat,1,morning,64,7,1
+23,Anita,50,Banjarmasin,Kalimantan Selatan,0,afternoon,59,5,1
+24,Muhamad,40,Kediri,Jawa Timur,0,morning,100,8,1
+25,Kusuma,51,Palangkaraya,Kalimantan Tengah,1,morning,76,7,1
+26,Rahmawati,35,Semarang,Jawa Tengah,1,morning,100,8,1
+27,Fitria,47,Pontianak,Kalimantan Barat,1,morning,89,6,1
+28,Retno,56,Batam,Kepulauan Riau,1,afternoon,57,6,1
+29,Kurnia,39,Blitar,Jawa Timur,0,afternoon,96,7,1
+30,Aditya,49,Banjarbaru,Kalimantan Selatan,1,afternoon,59,5,1
+31,Ria,56,Batam,Kepulauan Riau,0,morning,58,4,1
+32,Nugroho,39,Blitar,Jawa Timur,0,afternoon,68,4,1
+33,Putu,42,Malang,,,,69,5,1
+34,Handayani,20,Sungai Penuh,Jambi,0,morning,95,8,1
+35,Rahayu,27,Depok,Jawa Barat,1,morning,60,5,1
+36,Yunita,55,Tarakan,Kalimantan Utara,1,morning,89,7,1
+37,Rina,54,Samarinda,Kalimantan Timur,1,afternoon,84,6,1
+38,Ade,51,Palangkaraya,Kalimantan Tengah,0,afternoon,74,5,1
+39,Widya,22,Bandung,Jawa Barat,1,afternoon,66,5,1
+40,Intan,34,Salatiga,Jawa Tengah,0,afternoon,98,8,1
+41,Diah,30,Banjar,Jawa Barat,1,afternoon,85,6,1
+42,Agustina,26,Cirebon,Jawa Barat,1,morning,59,5,1
+43,Made,31,Magelang,Jawa Tengah,0,afternoon,65,4,1
+44,Abdul,25,Cimahi,Jawa Barat,1,afternoon,81,6,1
+45,Setiawan,48,Singkawang,Kalimantan Barat,0,morning,55,5,1
+46,Rizky,42,Malang,Jawa Timur,1,morning,74,5,1
+47,Rini,46,Surabaya,Jawa Timur,0,afternoon,72,6,1
+48,Wahyuni,46,Surabaya,Jawa Timur,1,morning,63,7,1
+49,Yulia,53,Bontang,Kalimantan Timur,1,morning,68,5,1
+50,Puji,27,Depok,Jawa Barat,1,morning,75,4,1

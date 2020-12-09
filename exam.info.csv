@@ -1,0 +1,51 @@
+id,name,age,city,province,active,class,last_exam_score,attendance_count,batch
+1,Utami,40,Kediri,Jawa Timur,1,afternoon,74,5,1
+2,Amalia,56,Batam,Kepulauan Riau,1,afternoon,63,4,1
+3,Dina,24,Bogor,Jawa Barat,1,morning,59,6,1
+4,Devi,37,Tegal,Jawa Tengah,1,afternoon,60,3,1
+5,Citra,36,Surakarta,Jawa Tengah,1,morning,69,5,1
+6,Arief,41,Madiun,Jawa Timur,1,afternoon,60,4,1
+7,Munaroh,15,Kota Administrasi Jakarta Barat,Jakarta,0,afternoon,91,6,1
+8,Bagus,16,Kota Administrasi Jakarta Pusat,Jakarta,1,morning,44,3,1
+9,Hidayat,17,Kota Administrasi Jakarta Selatan,Jakarta,0,morning,100,7,1
+10,Hendra,58,Bandar Lampung,Lampung,1,morning,75,6,1
+11,Eva,,Malang,Jawa Timur,0,afternoon,80,6,1
+12,Endah,53,Bontang,Kalimantan Timur,1,afternoon,58,4,1
+13,Raden,17,Kota Administrasi Jakarta Selatan,Jakarta,1,afternoon,87,6,1
+14,Novi,37,Tegal,Jawa Tengah,1,afternoon,65,4,1
+15,Irma,34,Salatiga,Jawa Tengah,0,,,3,1
+16,Astuti,52,Balikpapan,Kalimantan Timur,0,morning,77,6,1
+17,Astuti,52,Balikpapan,Kalimantan Timur,0,morning,77,6,1
+18,Achmad,44,Pasuruan,Jawa Timur,1,afternoon,53,5,1
+19,Aulia,53,Bontang,Kalimantan Timur,1,afternoon,50,4,1
+20,Amelia,59,Metro,Lampung,1,morning,67,5,1
+21,Prima,16,Kota Administrasi Jakarta Pusat,Jakarta,1,morning,55,4,1
+22,Angga,52,Balikpapan,Kalimantan Timur,1,afternoon,71,7,1
+23,Hadi,29,Tasikmalaya,Jawa Barat,1,morning,67,5,1
+24,Diana,18,Kota Administrasi Jakarta Timur,Jakarta,0,morning,47,2,1
+25,Anggraini,43,Mojokerto,Jawa Timur,0,afternoon,54,3,1
+26,Wulan,19,Kota Administrasi Jakarta Utara,Jakarta,1,afternoon,73,6,1
+27,Saputra,37,Tegal,Jawa Tengah,1,morning,67,7,1
+28,Yuni,16,Kota Administrasi Jakarta Pusat,Jakarta,0,afternoon,87,7,1
+29,Puspita,57,Tanjungpinang,Kepulauan Riau,1,afternoon,66,6,1
+30,Sari,26,Cirebon,Jawa Barat,0,afternoon,86,6,1
+31,Wisnu,33,Purwokerto,,1,afternoon,,5,1
+32,Mamat,32,Pekalongan,Jawa Tengah,0,afternoon,65,4,1
+33,Gogon,27,Depok,Jawa Barat,1,morning,76,5,1
+34,Budi,56,Batam,Kepulauan Riau,1,afternoon,65,3,1
+35,Vicky,27,Depok,Jawa Barat,0,afternoon,81,5,1
+36,Firman,59,Metro,Lampung,1,morning,53,4,1
+37,Hafizh,58,Bandar Lampung,Lampung,1,afternoon,82,6,1
+38,Saripah,38,Batu,Jawa Timur,1,afternoon,76,5,1
+39,Tuti,46,Surabaya,Jawa Timur,1,morning,51,4,1
+40,Komar,49,Banjarbaru,Kalimantan Selatan,1,morning,75,3,1
+41,Deden,20,Sungai Penuh,Jambi,1,morning,51,4,1
+42,Dadan,19,Kota Administrasi Jakarta Utara,Jakarta,1,afternoon,63,4,1
+43,Didin,49,Banjarbaru,,1,afternoon,61,4,1
+44,Dudung,39,Blitar,Jawa Timur,1,afternoon,53,4,1
+45,Een,15,Kota Administrasi Jakarta Barat,Jakarta,1,afternoon,74,5,1
+46,Endang,25,Cimahi,Jawa Barat,0,afternoon,65,6,1
+47,Yunus,50,Banjarmasin,Kalimantan Selatan,0,morning,66,6,1
+48,Puji,34,Salatiga,Jawa Tengah,1,afternoon,64,5,1
+49,Yunus,50,Banjarmasin,Kalimantan Selatan,0,morning,66,6,1
+50,Puji,34,Salatiga,Jawa Tengah,1,afternoon,64,5,1

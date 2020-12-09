@@ -1,0 +1,64 @@
+-- Hi! Welcome to My SQL Learning :) 
+-- By: Sulaiman Hawibowo
+
+SELECT * FROM "class.info";
+SELECT * FROM "class.info" LIMIT 10;
+SELECT city, province FROM "class.info" LIMIT 5;
+SELECT province FROM "class.info";
+SELECT DISTINCT city FROM "class.info";
+SELECT * FROM "class.info" WHERE province = 'Jawa Barat';
+SELECT * FROM "class.info" WHERE attendance_count <=4;
+SELECT * FROM "class.info" WHERE attendance_count >5;
+SELECT * FROM "class.info" WHERE city IN ('Palangkaraya','Tanjungpinang');
+SELECT * FROM "class.info" WHERE province LIKE '% Barat';
+SELECT * FROM "class.info" WHERE province = 'Jakarta' AND last_exam_score >= 80;
+SELECT * FROM "class.info" WHERE province != 'Kalimantan Barat';
+SELECT * FROM "class.info" WHERE city = 'Sukabumi' OR active = 1;
+SELECT * FROM "class.info" WHERE age > 20 AND province NOT LIKE '% Tengah';
+SELECT * FROM "class.info" ORDER BY age;
+SELECT * FROM "class.info" ORDER BY last_exam_score ASC;
+SELECT * FROM "class.info" ORDER BY last_exam_score DESC;
+SELECT * FROM "class.info" ORDER BY last_exam_score ASC LIMIT 5;
+SELECT COUNT (*) FROM "class.info";
+SELECT COUNT (province) FROM "class.info";
+SELECT COUNT (DISTINCT province) FROM 'class.info';
+SELECT MIN (age) AS 'min_age' FROM "class.info";
+SELECT MIN (attendance_count) AS 'Min_attendancecount' FROM "class.info";
+SELECT MAX (age) AS 'min_age' FROM "class.info";
+SELECT AVG (last_exam_score) AS 'Nilai Akhir' FROM "class.info";
+SELECT city, COUNT (*) AS 'n_cities' FROM "class.info" GROUP  BY city;
+
+SELECT province, COUNT (*) AS n_province , SUM (attendance_count) AS 'total_attendances', 
+								AVG (last_exam_score) AS 'Rata-rata nilai' 
+								FROM "class.info" GROUP BY province;
+
+SELECT *, CASE WHEN last_exam_score > 70 THEN 'Lulus Exam'
+								WHEN last_exam_score <= 70 THEN 'Remedial'
+								ELSE 'Alfa'
+								END AS "Ketentuan Penilaian"
+					FROM "class.info";
+
+SELECT age, CASE WHEN last_exam_score > 70 THEN 'Lulus Exam'
+								WHEN last_exam_score <= 70 THEN 'Remedial'
+								ELSE 'Alfa'
+								END AS "Hasil Penilaian",
+								COUNT (*) As "n_orang", 
+								SUM (attendance_count) As "jumlah kehadiran"
+					FROM "class.info"
+					GROUP BY age, "Hasil Penilaian";
+					
+SELECT * FROM "class.info" WHERE province = 'Jawa Barat'
+UNION
+SELECT * FROM "class.info" WHERE city IN ('Palangkaraya','Tanjungpinang');
+
+SELECT * FROM "class.info" WHERE attendance_count <7
+UNION ALL
+SELECT * FROM "class.info" WHERE class = 'morning';
+
+SELECT * FROM "exam.info";
+
+INSERT INTO "class.info" VALUES (51, 'Bowo', 23, 'Jakarta', 'DKI Jakarta', 1, 'morning', 100, 8, 1);
+INSERT INTO "class.info" ("name", "age", "city", "province") VALUES ('Dina', 21, 'Bandung', 'Jawa Barat');
+
+UPDATE "class.info"  SET "Class" = 'morning' WHERE "name" = 'Dina';
+
