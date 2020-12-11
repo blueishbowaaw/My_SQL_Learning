@@ -1,0 +1,108 @@
+-- SQL_Learning_2.0
+-- by Sulaiman Hawibowo
+
+SELECT * FROM products;
+SELECT * FROM products LIMIT 5;
+SELECT * FROM products WHERE category = 'Computer';
+SELECT * FROM products WHERE category != 'Computer';
+SELECT * FROM products WHERE stock >= 5;
+SELECT * FROM products WHERE stock < 5;
+SELECT * FROM products WHERE category IN ('Handphone','TV');
+SELECT * FROM products WHERE name like 'Laptop %';
+SELECT * FROM products WHERE category like 'Hand%';
+SELECT * FROM products WHERE category = 'TV' AND stock >= 5;
+SELECT * FROM products WHERE category = 'Computer' OR stock > 5;
+SELECT * FROM products WHERE category = 'Handphone' AND name NOT like '% A';
+SELECT * FROM products ORDER BY price;
+SELECT * FROM products ORDER BY price DESC;
+SELECT * FROM products ORDER BY category;
+SELECT category  FROM products ORDER BY category;
+SELECT name, category FROM products;
+SELECT DISTINCT category FROM products;
+SELECT count (*) FROM products;
+SELECT count (category) FROM products;
+SELECT count (DISTINCT category) FROM products;
+SELECT min (price) as min_price FROM products;
+SELECT max (stock) as max_stock FROM products;
+SELECT avg (price) as avg_price FROM products;
+SELECT sum (stock) as total_stock FROM products;
+SELECT category FROM products GROUP BY category;
+SELECT category, count (*) as n_products FROM products GROUP BY category;
+SELECT category, count (*) as n_products, sum (stock) as total_stock, avg (price) as avg_price FROM products GROUP BY category;
+
+SELECT*, CASE 
+WHEN price >7000000 THEN 'Very Expensive' 
+WHEN price >5000000 THEN 'Expensive'
+ELSE 'Cheap' 
+END as price_type FROM products ORDER BY price_type;
+
+SELECT category, CASE
+WHEN price >7000000 THEN 'Very Expensive' 
+WHEN price >5000000 THEN 'Expensive'
+ELSE 'Cheap' 
+END as price_type, 
+count (*) as n_products, sum (stock) as total_stock, avg(price) as avg_price 
+FROM products GROUP BY category, price_type ORDER BY price_type;
+
+
+SELECT * FROM products WHERE category = 'Computer'
+UNION
+SELECT * FROM products WHERE price >= 10000000;
+-- hasilnya akan sama dengan: 
+SELECT * FROM products WHERE category = 'Computer' OR price >=10000000;
+
+SELECT * FROM products WHERE category = 'Computer'
+UNION ALL
+SELECT * FROM products WHERE price >= 10000000;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SELECT * FROM virtual_products;
+DELETE FROM virtual_products WHERE product_id is NULL;
+
+SELECT product_id, name, category, 'products' as product_type FROM products
+UNION 
+SELECT product_id, name, category, 'virtual_products' as product_type FROM virtual_products;
+
+-- sama saja hasilnya dengan UNION ALL
+SELECT product_id, name, category, 'products' as product_type FROM products
+UNION ALL
+SELECT product_id, name, category, 'virtual_products' as product_type FROM virtual_products;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SELECT * FROM transactions;
+
+SELECT * FROM transactions t 
+JOIN 
+products p ON t.product_id = p.product_id AND t.product_type = 'products';
+
+SELECT t. *, p.name as product_name
+FROM transactions t
+JOIN
+products p ON t.product_id = p.product_id AND t.product_type = 'products';
+
+SELECT * FROM transactions t 
+LEFT JOIN 
+products p ON t.product_id = p.product_id AND t.product_type = 'products' ORDER BY product_type;
+
+SELECT t.*, ap.name as product_name 
+FROM transactions t
+JOIN
+(
+SELECT product_id, name, 'products' as product_type FROM products
+UNION ALL
+SELECT product_id, name,  'virtual_products' as product_type FROM virtual_products
+)ap ON ap.product_id = t.product_id AND ap.product_type = t.product_type;
+
+INSERT INTO virtual_products
+VALUES (6, 'token listrik', 'Electric', 'Postpaid')
+INSERT INTO virtual_products
+(product_id, name, type)
+VALUES (7, 'token listrik', 'Prepaid')
+
+UPDATE transactions
+SET product_id = 5 
+WHERE transactions_id = 14
+
+UPDATE transactions
+SET product_type = 'products'
+WHERE transactions_id = 5

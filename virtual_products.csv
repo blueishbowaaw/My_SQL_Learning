@@ -1,0 +1,7 @@
+product_id,name,category,type
+1,pulsa ,Phone,Prepaid
+2,paket data,Phone,Prepaid
+3,token listrik,Electirc,Prepaid
+4,tagihan listrik,Electirc,Postpaid
+5,tagihan telepon,Phone,Postpaid
+
