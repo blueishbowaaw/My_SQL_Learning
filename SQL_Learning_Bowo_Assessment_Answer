@@ -4,6 +4,10 @@
 -- Hi, in this section I would answering my SQL's Assessment from a Dataset Superstore Simple! 
 -- note: your feedback and correction would be appriciated :) Thank YOU
 
+
+#Soal1. Lakukan uji univariat terhadap masing-masing variabel sales dan profit 
+#(mean, median, standar deviasi, dan variansi)! Jelaskan arti dari masing-masing angka tersebut!
+
 SELECT * FROM dataset_superstore_simple;
 --No.1
 SELECT sum(sales) as total_sales, 
@@ -38,3 +42,6 @@ SELECT sum(profit) as total_profit,
 GROUP BY order_date 
 ORDER BY total_profit DESC
 LIMIT 1;
+
+
+--end
