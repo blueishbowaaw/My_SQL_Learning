@@ -8,15 +8,16 @@
 #Soal1. Lakukan uji univariat terhadap masing-masing variabel sales dan profit 
 #(mean, median, standar deviasi, dan variansi)! Jelaskan arti dari masing-masing angka tersebut!
 
-SELECT * FROM dataset_superstore_simple;
 --No.1
+SELECT * FROM dataset_superstore_simple;
 SELECT sum(sales) as total_sales, 
 	customer_id FROM dataset_superstore_simple 
 	GROUP BY customer_id 
 	ORDER BY total_sales DESC 
 	LIMIT 1;
-	
+
 --No.2
+SELECT * FROM dataset_superstore_simple;
 SELECT sum(profit) as total_profit, 
 	category, sub_category FROM dataset_superstore_simple 
 WHERE category = 'Office Supplies' 
