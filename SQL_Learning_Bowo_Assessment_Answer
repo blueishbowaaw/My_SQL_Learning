@@ -22,13 +22,15 @@ SELECT sum(profit) as total_profit,
 WHERE category = 'Office Supplies' 
 GROUP BY category, sub_category; 
 
---No.3 
+#Soal3. Berapa banyak order yang menghasilkan profit negatif (rugi)?
+--Jawaban:
 SELECT order_id, profit FROM dataset_superstore_simple 
 WHERE profit < 0;
 SELECT count(order_id) as 'jumlah_profit<0' FROM dataset_superstore_simple 
 WHERE profit < 0;
 
---No.4
+#Soal4. Antara 3 customer_id ini, mana yang total sales-nya paling banyak: JE-16165,KH-16510, AD-10180?
+--Jawaban:
 SELECT sum(sales) as total_sales, 
 	customer_id FROM dataset_superstore_simple 
 WHERE customer_id IN ('JE-16165','KH-16510', 'AD-10180') 
