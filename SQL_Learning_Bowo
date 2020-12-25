@@ -57,8 +57,10 @@ SELECT * FROM "class.info" WHERE class = 'morning';
 
 SELECT * FROM "exam.info";
 
+--Memasukkan Data ke dalam Table
 INSERT INTO "class.info" VALUES (51, 'Bowo', 23, 'Jakarta', 'DKI Jakarta', 1, 'morning', 100, 8, 1);
 INSERT INTO "class.info" ("name", "age", "city", "province") VALUES ('Dina', 21, 'Bandung', 'Jawa Barat');
 
 UPDATE "class.info"  SET "Class" = 'morning' WHERE "name" = 'Dina';
+
 
