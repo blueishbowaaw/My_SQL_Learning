@@ -8,7 +8,9 @@ SELECT city, province
 FROM "class.info"
 LIMIT 5;
 
-SELECT province FROM "class.info";
+SELECT province 
+FROM "class.info";
+
 SELECT DISTINCT city FROM "class.info";
 SELECT * FROM "class.info" WHERE province = 'Jawa Barat';
 SELECT * FROM "class.info" WHERE attendance_count <=4;
