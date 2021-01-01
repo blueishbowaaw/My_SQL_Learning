@@ -3,7 +3,11 @@
 
 SELECT * FROM "class.info";
 SELECT * FROM "class.info" LIMIT 10;
-SELECT city, province FROM "class.info" LIMIT 5;
+
+SELECT city, province 
+FROM "class.info"
+LIMIT 5;
+
 SELECT province FROM "class.info";
 SELECT DISTINCT city FROM "class.info";
 SELECT * FROM "class.info" WHERE province = 'Jawa Barat';
