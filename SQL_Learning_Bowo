@@ -18,7 +18,10 @@ SELECT *
 FROM "class.info" 
 WHERE province = 'Jawa Barat';
 
-SELECT * FROM "class.info" WHERE attendance_count <=4;
+SELECT *
+FROM "class.info" 
+WHERE attendance_count <=4;
+
 SELECT * FROM "class.info" WHERE attendance_count >5;
 SELECT * FROM "class.info" WHERE city IN ('Palangkaraya','Tanjungpinang');
 SELECT * FROM "class.info" WHERE province LIKE '% Barat';
